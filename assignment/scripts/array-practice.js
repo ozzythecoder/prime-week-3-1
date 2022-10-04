@@ -35,11 +35,11 @@ console.log('First animal is', animalArray[0])
 console.log('Second animal is', animalArray[1]);
 
 // 3.b. TODO: Log the last animal in the array using it's array index 
-console.log('Last animal is', animalArray[3])
+console.log('Last animal (by array index) is', animalArray[3])
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
-console.log('Last animal is', animalArray[animalArray.length - 1]);
+console.log('Last animal (by array length) is', animalArray[animalArray.length - 1]);
 
 
 // 4. Adding & Removing Array Items
@@ -51,7 +51,7 @@ console.log('Added an animal to end,', animalArray);
 
 // 4.a. TODO: Add a new food at the end of your array & log the array
 foodArray.push('lamb vindaloo');
-console.log(foodArray);
+console.log('Added a food to the end,', foodArray);
 
 // Example: Remove the last animal by using Array.pop
 let removedAnimal = animalArray.pop();
@@ -92,14 +92,14 @@ console.log('Replaced second food item:', foodArray);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
-foodArray.sort();
-foodArray.reverse();
-console.log('My favorite foods in reverse alphabetical order are', foodArray);
+let reversedArray = foodArray.sort();
+reversedArray.reverse();
+console.log('My favorite foods in reverse alphabetical order are', reversedArray);
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
-let foodString = `My favorite foods are ${foodArray[0]}, ${foodArray[1]}, ${foodArray[2]}, and ${foodArray[3]}.`;
+let foodString = `My favorite foods (as a string) are ${foodArray[0]}, ${foodArray[1]}, ${foodArray[2]}, and ${foodArray[3]}.`;
 console.log(foodString);
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
